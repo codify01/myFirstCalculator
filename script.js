@@ -9,12 +9,12 @@ const clickTapSay = (text) => {
      newText = text.slice(0,-1);
      document.getElementById('screen').innerHTML = newText;
  }
- function negation() {
+ const negation = () => {
      document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML / -1) 
  }
- function calculate() {
+ const calculate = () => {
      document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML);
  }
- function percentage() {
+ const percentage = () => {
      document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML / 100) 
  }
