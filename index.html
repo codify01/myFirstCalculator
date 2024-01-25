@@ -3,80 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Calculator</title>
 </head>
-<body>
+<body class="bg-dar">
     <h1 class="text-center">Simple Calculator by Codify</h1>
     <p class="text-center">On screen Keyboard</p>
-    <div style="border-bottom: 1px solid grey; height: 50px;" class="w-100 w-md-75  m-auto ps-2 py-4" id="screen"></div>
-    <div class="w-100 w-md-75 mt-3 p-2 m-auto container">
+    <div style="height: 50px;" class="text-end me-3 pt-5 fs-1" id="screen"></div>
+    <div class="w-100 w-md-75 mt-3 p-3 m-auto container">
         <div class="row p-1">
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="percentage()">%</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="negation('+/-')">+/_</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay('.')">.</button>
-            <button class="col-2 btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay('*')">X</button>
+            <button class=" col  m-2 fs-4 fw-bold py-4" onclick="percentage()">%</button>
+            <button class=" col  m-2 fs-4 fw-bold py-4" onclick="negation('+/-')">+/_</button>
+            <button class=" col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay('.')">.</button>
+            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('*')">X</button>
         </div>
         <div class="row p-1">
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(1)">1</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(2)">2</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(3)">3</button>
-            <button class="col-2 btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay('+')">+</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(1)">1</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(2)">2</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(3)">3</button>
+            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('+')">+</button>
         </div>
         <div class="row p-1">
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(4)">4</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(5)">5</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(6)">6</button>
-            <button class="col-2 btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay('-')">-</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(4)">4</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(5)">5</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(6)">6</button>
+            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('-')">-</button>
         </div>
         <div class="row p-1">
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(7)">7</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(8)">8</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(9)">9</button>
-            <button class="col-2 btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay('/')">/</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(7)">7</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(8)">8</button>
+            <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(9)">9</button>
+            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('/')">/</button>
         </div>
         <div class="row p-1">
-            <button class="col btn btn-sm btn-danger m-1 py-4 fs-4" onclick="clearScreen()">Clear</button>
-            <button class="col btn btn-sm btn-warning m-1 py-4 fs-4" onclick="backSpace()">Backspace</button>
-            <button class="col btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="clickTapSay(0)">0</button>
-            <button class="col-2 btn btn-sm btn-secondary m-1 py-4 fs-4" onclick="calculate()">=</button>
+            <button class="col m-2 py-4 fs-4 fw-bold" onclick="clearScreen()">Clear</button>
+            <button class="col m-2 py-4 fs-4 fw-bold" onclick="backSpace()"><i class="bi bi-backspace"></i></button>
+            <button class="col  m-2 py-4 fs-4 fw-bold" onclick="clickTapSay(0)">0</button>
+            <button class="col-2 m-1 py-4 fs-4 m-2 fw-bold" onclick="calculate()">=</button>
         </div>
     </div>
 
-    <script>
-        function clickTapSay(text) {
-           document.getElementById('screen').innerHTML += text; 
-
-        //    if(document.getElementById('screen').innerHTML == '0') {
-        //     document.getElementById('screen').innerHTML = text;
-        //    }else {
-        //     document.getElementById('screen').innerHTML += text;
-        //    }
-        }
-        function clearScreen() {
-           document.getElementById('screen').innerHTML = ""; 
-        }
-        function backSpace() {
-            let text = document.getElementById('screen').innerHTML;
-            newText = text.slice(0,-1);
-            document.getElementById('screen').innerHTML = newText;
-        }
-        function negation() {
-            document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML / -1) 
-        }
-        // function operation(mod) {
-        //     let num1 = document.getElementById('screen').innerText;
-        //     document.getElementById('screen').innerText += mod; 
-        // }
-        function calculate() {
-            // let text = document.getElementById('screen').innerHTML;
-            // result = text++;
-            // eval(result) = document.getElementById('screen').innerHTML;
-            document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML);
-        }
-        function percentage() {
-            document.getElementById('screen').innerHTML = eval(document.getElementById('screen').innerHTML / 100) 
-        }
+    <script src="script.js">
     </script>
 
 </body>
