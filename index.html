@@ -8,42 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <title>Simple Calculator</title>
 </head>
-<body class="bg-dar col-lg-4 m-auto">
+<body class="col-lg-4 m-auto">
     
     <div class="container mt-3">
-        <!-- <h1 class="text-center">Simple Calculator by Codify</h1>
-    <p class="text-center">On screen Keyboard</p> -->
+       <div class="timeDate my-3">
+        <div id="time" class="screen px-3">time</div>
+        <!-- <div id="date" class="screen px-3">date</div> -->
+       </div>
     <div style="height: 100px;" class="text-end me-3 pt-5 fw-bold fs-1 container col-12 screen" id="screen"></div>
     <div class="w-100 w-md-75 p-3 m-auto container">
         <div class="row p-1">
-            <button class="col m-2 py-4 fs-4 fw-bold" onclick="clearScreen()">A/C</button>
+            <button class="col m-2 py-4 fs-4 fw-bold" onclick="clearScreen()">C</button>
             <button class=" col  m-2 fs-4 fw-bold py-4" onclick="negation('+/-')">+/_</button>
             <button class=" col  m-2 fs-4 fw-bold py-4" onclick="percentage()">%</button>
-            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('*')">X</button>
+            <button class="col fw-bold py-4 fs-4 m-2" onclick="clickTapSay('*')">X</button>
         </div>
         <div class="row p-1">
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(1)">1</button>
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(2)">2</button>
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(3)">3</button>
-            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('+')">+</button>
+            <button class="col fw-bold py-4 fs-4 m-2" onclick="clickTapSay('+')">+</button>
         </div>
         <div class="row p-1">
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(4)">4</button>
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(5)">5</button>
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(6)">6</button>
-            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('-')">-</button>
+            <button class="col fw-bold py-4 fs-4 m-2" onclick="clickTapSay('-')">-</button>
         </div>
         <div class="row p-1">
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(7)">7</button>
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(8)">8</button>
             <button class="col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay(9)">9</button>
-            <button class="col-2 fw-bold py-4 fs-4 m-2" onclick="clickTapSay('/')">/</button>
+            <button class="col fw-bold py-4 fs-4 m-2" onclick="clickTapSay('/')">/</button>
         </div>
         <div class="row p-1">
             <button class=" col  m-2 fs-4 fw-bold py-4" onclick="clickTapSay('.')">.</button>
             <button class="col  m-2 py-4 fs-4 fw-bold" onclick="clickTapSay(0)">0</button>
             <button class="col m-2 py-4 fs-4 fw-bold" onclick="backSpace()"><i class="bi bi-backspace"></i></button>
-            <button class="col-2 m-1 py-4 fs-4 m-2 fw-bold" onclick="calculate()">=</button>
+            <button class="col m-1 py-4 fs-4 m-2 fw-bold" onclick="calculate()">=</button>
         </div>
         <p class="text-center mt-3">Developed by Codify</p>
     </div>

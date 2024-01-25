@@ -1,5 +1,11 @@
+let time = new Date()
+document.getElementById('time').innerText = `Today's date is: ${time.getMonth()} ${time.getDate()} ${time.getFullYear()}`
 const clickTapSay = (text) => {
-    document.getElementById('screen').innerHTML += text; 
+    if (document.getElementById('screen').innerHTML == 0) {
+        document.getElementById('screen').innerHTML = text; 
+    }else{
+        document.getElementById('screen').innerHTML += text;  
+    }
  }
  const clearScreen = () => {
     document.getElementById('screen').innerHTML = ""; 

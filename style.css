@@ -1,4 +1,4 @@
-button, .screen {
+button {
     text-transform: uppercase;
     letter-spacing: 0.4px;
     color: #7e97b8;
@@ -6,7 +6,7 @@ button, .screen {
     border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-color: rgba(255, 255, 255, 0.333);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 100%;
     transform: translate(0px, 0px) rotate(0deg);
     transition: 0.2s;
     box-shadow: -4px -2px 5px 0px #ffffff, 4px 2px 5px 0px rgb(95 157 231 / 48%);
@@ -20,5 +20,25 @@ button, .screen {
    
    button:active {
     box-shadow: none;
+   }
+   .screen {
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    /* border-radius: 100%; */
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 5px 0px #ffffff, 4px 2px 5px 0px rgb(95 157 231 / 48%);
+   }
+
+   .timeDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
    }
    
