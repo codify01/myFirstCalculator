@@ -1,5 +1,5 @@
-let time = new Date()
-document.getElementById('time').innerText = `Today's date is: ${time.getMonth()} ${time.getDate()} ${time.getFullYear()}`
+let time = new Date().toLocaleDateString()
+document.getElementById('time').innerText = `Today's date is: ${time}`
 const clickTapSay = (text) => {
     if (document.getElementById('screen').innerHTML == 0) {
         document.getElementById('screen').innerHTML = text; 
